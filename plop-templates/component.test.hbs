@@ -4,11 +4,12 @@
 
 import 'react-native';
 import React from 'react';
-import {{pascalCase name}} from './index';
+import {{pascalCase name}} from '../src/{{kebabCase category}}/{{kebabCase name}}/index';
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
-  renderer.create(<{{pascalCase name}} />);
+  const tree = renderer.create(<{{pascalCase name}} />);
+  expect(tree).toMatchSnapshot();
 });

@@ -37,7 +37,7 @@ module.exports = plop => {
                     },
                     {
                         type: 'add',
-                        path: 'src/features/{{kebabCase name}}/index.test.tsx',
+                        path: '__tests__/{{pascalCase name}}.test.tsx',
                         templateFile: 'plop-templates/component.test.hbs'
                     },
                     {
@@ -55,7 +55,7 @@ module.exports = plop => {
                     },
                     {
                         type: 'add',
-                        path: 'src/shared/{{kebabCase name}}/index.test.tsx',
+                        path: '__tests__/{{pascalCase name}}.test.tsx',
                         templateFile: 'plop-templates/component.test.hbs'
                     },
                     {
